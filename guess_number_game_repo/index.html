@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess the Number Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Guess a Number Between 1 and 100</h1>
+  <input type="number" id="guess" min="1" max="100" placeholder="Enter your guess">
+  <button onclick="checkGuess()">Guess!</button>
+  <button onclick="restartGame()">Restart</button>
+
+  <div id="message"></div>
+  <div id="history"></div>
+
+  <div id="musicToggle" onclick="toggleMusic()">Pause Music</div>
+
+  <audio id="bgm" autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
